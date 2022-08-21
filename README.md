@@ -21,6 +21,7 @@ npm start
 - 로그인 상태는 쿠키로 관리하되 클라이언트가 아닌 **서버 측에서 관리**한다
   - `/login`에서 유저가 로그인 버튼을 클릭할 경우 쿠키를 통해 유저가 로그인 했음을 저장하고 `/`로 이동
   - `index.html`에서 로그아웃 버튼을 클릭할 경우 쿠키를 제거해 로그아웃 상태로 전환하고 `/login`으로 이동
+- `/teapot` 경로의 경우 [418 오류](https://developer.mozilla.org/ko/docs/Web/HTTP/Status/418)를 반환
 - 이외의 요청에는 404 응답과 함께 `public/not-found.html` 전송
 
 <br />
